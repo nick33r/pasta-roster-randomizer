@@ -1,8 +1,28 @@
 .page {
   background-color: #323131;
   color: #fff;
+  height: 100vh;
+}
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  gap: 30px;
+}
+
+.header__army-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header__army-item {
+  font-size: 20px;
+  inline-size: 20vw;
+  block-size: 45px;
+  text-align: center;
+  align-content: center;
+  border-inline-start: solid 1px #fff;
+  border-inline-end: solid 1px #fff;
+  border-block-end: solid 1px #fff;
 }
