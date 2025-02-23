@@ -1,43 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roster Randomizer</title>
-  <link rel="stylesheet" href="./fonts/fonts.css">
-  <link rel="stylesheet" href="./styles/globals.css">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/animations.css">
-</head>
-<body class="page">
-  <header class="header">
-    <a class="header__add-button header__icon" href="#"></a>
-    <ul class="header__army-list">
-      <li class="header__army-item">
-        <a class="header__army-link" href="#">Death Guard</a>
-      </li>
-      <li class="header__army-item">
-        <a class="header__army-link" href="#">T’au Empire</a>
-      </li>
-      <li class="header__army-item">
-        <a class="header__army-link" href="#">Necrons</a>
-      </li>
-    </ul>
-    <a class="header__clear-button header__icon" href="#"></a>
-  </header>
-
-  <main>
-    <aside class="roller"></aside>
-
-    <section class="roster">
-
-    </section>
-
-    <aside class="unit-bar">
-      <ul class="unit-list">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roster Randomizer</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <a class="header__add-button header__icon" href="#"></a>
+      <ul class="header__army-list">
+        <li class="header__army-item">
+          <a class="header__army-link" href="#">Death Guard</a>
+        </li>
+        <li class="header__army-item">
+          <a class="header__army-link" href="#">T’au Empire</a>
+        </li>
+        <li class="header__army-item">
+          <a class="header__army-link" href="#">Necrons</a>
+        </li>
       </ul>
-    </aside>
-  </main>
-</body>
+      <a class="header__clear-button header__icon" href="#"></a>
+    </header>
+
+    <main class="main">
+      <aside class="roller"></aside>
+
+      <section class="roster">
+        <div class="card">
+          <header class="card__header">
+            <h2 class="card__name">necron warriors</h2>
+            <ul class="card__stats">
+              <li class="card__stat">
+                M
+                <div class="card__stat-value">5"</div>
+              </li>
+              <li class="card__stat">
+                T
+                <div class="card__stat-value">4</div>
+              </li>
+              <li class="card__stat">
+                Sv
+                <div class="card__stat-value">4+</div>
+              </li>
+              <li class="card__stat">
+                W
+                <div class="card__stat-value">1</div>
+              </li>
+              <li class="card__stat">
+                Ld
+                <div class="card__stat-value">7+</div>
+              </li>
+              <li class="card__stat">
+                OC
+                <div class="card__stat-value">2</div>
+              </li>
+            </ul>
+          </header>
+
+          <main class="card__main">
+
+            <div class="card__wargear-section">
+              <div class="card__ranged-weapons">
+                <div class="card__section-title card-accent">
+                  <h3 class="card-accent__element">ranged weapons</h3>
+                  <span class="card-accent__element">range</span>
+                  <span class="card-accent__element">a</span>
+                  <span class="card-accent__element">bs</span>
+                  <span class="card-accent__element">s</span>
+                  <span class="card-accent__element">ap</span>
+                  <span class="card-accent__element">d</span>
+                </div>
+                <ul class="card__weapon-list">
+                  <li class="card__weapon-item">
+                    <span class="card__weapon-element">Gauss flayer</span>
+                    <span class="card__weapon-element">24"</span>
+                    <span class="card__weapon-element">1</span>
+                    <span class="card__weapon-element">4+</span>
+                    <span class="card__weapon-element">4</span>
+                    <span class="card__weapon-element">0</span>
+                    <span class="card__weapon-element">1</span>
+                  </li>
+                  <li class="card__weapon-item">
+                    <span class="card__weapon-element">Gauss reaper</span>
+                    <span class="card__weapon-element">12"</span>
+                    <span class="card__weapon-element">2</span>
+                    <span class="card__weapon-element">4+</span>
+                    <span class="card__weapon-element">4</span>
+                    <span class="card__weapon-element">-1</span>
+                    <span class="card__weapon-element">1</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__melee-weapons">
+                <div class="card__section-title card-accent">
+                  <h3 class="card-accent__element">melee weapons</h3>
+                  <span class="card-accent__element">range</span>
+                  <span class="card-accent__element">a</span>
+                  <span class="card-accent__element">ws</span>
+                  <span class="card-accent__element">s</span>
+                  <span class="card-accent__element">ap</span>
+                  <span class="card-accent__element">d</span>
+                </div>
+                <ul class="card__weapon-list">
+                  <li class="card__weapon-item">
+                    <span class="card__weapon-element">Close combat weapon</span>
+                    <span class="card__weapon-element">Melee</span>
+                    <span class="card__weapon-element">1</span>
+                    <span class="card__weapon-element">4+</span>
+                    <span class="card__weapon-element">4</span>
+                    <span class="card__weapon-element">0</span>
+                    <span class="card__weapon-element">1</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__wargear-options">
+                <div class="card__section-title card-accent">
+                  <h3 class="card-accent__element">wargear options</h3>
+                </div>
+                <ul class="card__wargear-list">
+                  <li class="card__wargear-item">
+                    <span class="card__wargear-name">Auspex</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card__side-section">
+              <div class="card__abilities">
+                <div class="card__section-title card-accent">
+                  <h3 class="card-accent__element">abilities</h3>
+                </div>
+                <ul class="card__ability-list">
+                  <li class="card__ability-item">
+                    CORE
+                    <span class="card__ability">Scouts 9"</span>
+                  </li>
+                  <li class="card__ability-item">
+                    FACTION
+                    <span class="card__ability">Reanimation Protocols</span>
+                  </li>
+                  <li class="card__ability-item">
+                    <span class="card__ability">Their Number is Legion: Each time this unit’s Reanimation Protocols activate, you can re-roll the dice to see how many wounds are reanimated.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__wargear-abilities">
+                <div class="card__section-title card-accent">
+                  <h3 class="card-accent__element">wargear abilities</h3>
+                </div>
+                <ul class="card__wargear-ability-list">
+                  <li class="card__wargear-ability-item">
+                    <span class="card__wargear-ability">Auspex: Each time this unit uses its Auspex ability, you can re-roll the dice to see how many wounds are reanimated.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__unit-composition">
+                <div class="card__section-title card-accent">
+                  <h3 class="card-accent__element">unit composition</h3>
+                </div>
+                <ul class="card__unit-list">
+                  <li class="card__unit-item">
+                    <span class="card__unit-quantity">1</span>
+                    <span class="card__unit-name">Necron Warriors</span>
+                  </li>
+                </ul>
+                <div class="card__unit-total">
+                  <span class="card__unit-total-quantity">10 models</span>
+                  <span class="card__unit-total-score">100</span>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
+
+      <aside class="unit-bar">
+        <ul class="unit-list"></ul>
+      </aside>
+    </main>
+  </body>
 </html>
